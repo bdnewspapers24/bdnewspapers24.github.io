@@ -17,7 +17,7 @@ overflow: hidden;
 #div1 {
 position: fixed;
 width: 100%;
-height: 90px;
+height: 95px;
 overflow: hidden;
 top: 0;
 background: #f6f6f6;
@@ -28,7 +28,7 @@ left: 0;
 position: absolute;
 width: 100%;
 bottom: 0;
-top: 90px;
+top: 95px;
 }
 </style>
 
@@ -49,12 +49,14 @@ function updateiframe() {
   }
   var hash = getUrlVars();
   var siteUrl = decodeURIComponent(hash['url']);
+  var siteTitle = decodeURIComponent(hash['title']);
   
   	//if address bar URL have a '?url=' URL...
 	//then inject that url into iframe src.
 	if (siteUrl.length > 10 )
 	{		
-		document.getElementById('news_iFrame_ID').src = siteUrl;	
+		document.getElementById('news_iFrame_ID').src = siteUrl;
+		document.title = siteTitle + ' Bangla Newspaper';
 	}
 	
 	//when address bar URL doesn't have a '?url='
