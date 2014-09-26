@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Read Bangla Newspaper</title>
-
 <style type="text/css">
 * {
 margin: 0;
@@ -31,8 +30,10 @@ bottom: 0;
 top: 90px;
 }
 </style>
+
 <script language="javascript">
 <!--
+
 window.onload = updateiframe; //event handler (calls the function)
 function updateiframe() {
   function getUrlVars() {
@@ -47,8 +48,22 @@ function updateiframe() {
   }
   var hash = getUrlVars();
   var siteUrl = decodeURIComponent(hash['url']);
-  document.getElementById('news_iFrame_ID').src = /*'http://' +*/ siteUrl;
+  
+  	//if address bar URL have a '?url=' URL...
+	//then inject that url into iframe src.
+	if (siteUrl.length > 10 )
+	{		
+		document.getElementById('news_iFrame_ID').src = siteUrl;	
+	}
+	
+	//when address bar URL doesn't have a '?url='
+	//then use a default iframe src URL.
+	else {
+		document.getElementById('news_iFrame_ID').src = "file:///F:/Web/github/bdnewspapers24.github.io/view/nothing-is-here.html";
+	}
+	
 }
+
 -->
 </script>
 </head>
@@ -59,7 +74,7 @@ function updateiframe() {
 <iframe src="top-ads/top-ads-iframe.html" id="bniframe1" width="100%" margin="0" height="90px" align="top" scrolling="No" frameborder="0"></iframe>
 </div>
 <div id="div2">
-<iframe src="http://go.dimpost.com" id="news_iFrame_ID" width="100%" margin="0" height="100%" align="top" scrolling="Auto" frameborder="0"></iframe>
+<iframe src="file:///F:/Web/github/bdnewspapers24.github.io/view/nothing-is-here.html" id="news_iFrame_ID" width="100%" margin="0" height="100%" align="top" scrolling="Auto" frameborder="0"></iframe>
 </div>
 
 </body>
