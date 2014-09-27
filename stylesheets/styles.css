@@ -872,7 +872,7 @@ footer {
   }
 
   #banner {
-    width: 100%;
+    max-width: 100%;
   }
   #banner .downloads {
     margin-right: 60px;
@@ -885,7 +885,7 @@ footer {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
     padding: 20px auto;
-    margin: 190px auto 20px;
+    margin: 20px auto 20px;
     max-width: 600px;
   }
 
@@ -904,8 +904,9 @@ footer {
   }
 
   header {
-    padding: 20px 20px;
+   
     margin: 0;
+	min-height: auto;
   }
   header h1 {
     font-size: 32px;
@@ -919,19 +920,16 @@ footer {
     display: none;
   }
 
-  #banner {
-    top: 80px;
-  }
   #banner .fork {
     float: left;
     display: inline-block;
     margin-left: 0px;
-    position: fixed;
+    position: absolute;
     left: 20px;
   }
 
   section {
-    margin-top: 130px;
+    margin-top: 20px;
     margin-bottom: 0px;
     width: auto;
   }
