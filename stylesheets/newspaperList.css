@@ -1,4 +1,5 @@
-.totalcontainercss{
+
+.totalcontainercss a {
 background:none repeat scroll 0 0 #F7F7F7;
 border:2px solid #8F8F8F;
 float:left;
@@ -9,7 +10,7 @@ text-align:center;
 width:176px;
 height:54px;
 }
-.totalcontainercss:hover{
+.totalcontainercss a:hover{
 background:none repeat scroll 0 0 #FAFAFA;
 border:2px solid #FF7B00;
 /*box-shadow*/
@@ -54,10 +55,9 @@ width:172px;
     text-decoration: none;
 }
 .rank{
-bottom:0;
-color:rgba(0, 0, 0, 0.2);
-left:3px;
-position:absolute;
+display: none;
+position: absolute;
+left: 9999px;
 }
 
 .sort-list{
@@ -126,6 +126,7 @@ position:absolute;
     overflow: hidden;
     padding: 0 0 0 5px;
     width: 125px;
+	color: #444;
 }
 
 .drop-down:hover .panel{
@@ -146,6 +147,7 @@ position:absolute;
     top: 0;
     width: 130px;
     z-index: 1000;
+	color: #444;
 }
 
 .drop-down ul li {
