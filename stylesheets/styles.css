@@ -110,6 +110,7 @@ html {
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
+
 html,
 button,
 input,
@@ -118,6 +119,9 @@ textarea {
   font-family: sans-serif;
 }
 
+* {
+	outline: none;
+}
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
@@ -132,7 +136,7 @@ body {
  * Addresses outline displayed oddly in Chrome
  */
 a:focus {
-  outline: thin dotted;
+  outline: none;
 }
 
 /*
@@ -143,7 +147,7 @@ a:hover,
 a:active {
   outline: 0;
 }
-
+	
 /* =============================================================================
    Typography
    ========================================================================== */
@@ -804,14 +808,21 @@ section {
 small {
   font-size: 12px;
 }
-
-nav {
+/*it was 'nav' before, for sticky.js ia had to change that*/
+.sticky-wrapper {
   width: 230px;
-  position: fixed;
-  top: 220px;
+  position: absolute;
+  top: 40px;
   left: 50%;
   margin-left: -580px;
   text-align: right;
+}
+.sticky-wrapper nav {
+width: 225px;
+}
+nav.fixed {
+position: fixed;
+top: 23px;
 }
 nav ul {
   list-style: none;
@@ -829,6 +840,10 @@ nav ul li.tag-h1 {
 nav ul li.tag-h1 a {
   font-weight: bold;
   color: #333;
+}
+li.current a {
+color: #222 !important;
+font-weight: bold;
 }
 nav ul li.tag-h2 + .tag-h1 {
   margin-top: 10px;

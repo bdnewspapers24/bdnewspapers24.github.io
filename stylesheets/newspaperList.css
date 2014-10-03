@@ -87,7 +87,7 @@ left: 9999px;
     border: 1px solid #AAAAAA;
     display: block;
     float: left;
-    height: 20px;
+    height: 24px;
     margin: 0 0 0 1.25em;
     padding: 0 0 0 3px;
     width: 150px;
@@ -111,8 +111,8 @@ left: 9999px;
 .drop-down {
     border: 1px solid #AAAAAA;
     float: left;
-    height: 20px;
-    margin: 0.6em 0 0 1.25em;
+    height: 24px;
+    margin: 0.6em 0 0 0.4em;
     width: 130px;
 }
 
@@ -120,13 +120,13 @@ left: 9999px;
     background: url("https://lh6.googleusercontent.com/-u630dwL4cPc/UlLa5uMh5zI/AAAAAAAACJw/8K_ajK-25NA/h120/down.png") no-repeat scroll 98% 50% #FFFFFF;
     cursor: pointer;
     float: left;
-    height: 20px;
-    line-height: 19px;
+    height: 24px;
+    line-height: 24px;
     margin: 0;
     overflow: hidden;
     padding: 0 0 0 5px;
     width: 125px;
-	color: #444;
+	color: #232323;
 }
 
 .drop-down:hover .panel{

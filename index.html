@@ -11,7 +11,7 @@
 	<!-- Grab Google CDN's jQuery; fall back to local if offline -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="javascripts/jQuery_v1.9.1.js">\x3C/script>')</script>
-    <script src="javascripts/main.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -48,22 +48,22 @@
 
     <div class="wrapper">
       <nav>
-        <ul>  <!--
-          <li>akbar</li>
- 		  <li>ali</li>
- 		  <li>khan</li> -->
+        <ul> 
+            <li class="tag-h2"><a href="#sortscript1">জাতীয় বাংলা সংবাদপত্রসমূহ</a></li>
+            <li class="tag-h2"><a href="#sortscript2">অনলাইন সংবাদপত্রসমূহ / পোর্টাল</a></li>
+            <li class="tag-h2"><a href="#sortscript3">বিদেশী বাংলা সংবাদপত্রসমূহ</a></li>
+            <li class="tag-h2"><a href="#sortscript4">ই-সংবাদপত্রসমূহ (প্রিন্ট ভার্সন যেমন)</a></li>
         </ul>
       </nav>
       
 <section>
 <!--Newspaper list Start-->
 <!--section_1-->
-<div id="sortscript3">
-<h2 style="margin-top: 15px;">
-জাতীয় বাংলা সংবাদপত্রসমূহ</h2>
+<div id="sortscript1">
+<h2 style="margin-top: 12px;">জাতীয় বাংলা সংবাদপত্রসমূহ</h2>
 <script>
    $('document').ready(function(){
-    $('#sortscript3').jplist({
+    $('#sortscript1').jplist({
     
      items_box: '.sort-list' 
      ,item_path: '.totalcontainercss' 
@@ -206,11 +206,11 @@ No results found</div>
 <hr/>
 <br/><br/>
 <!--Portal section_START-->
-<div id="sortscript">
+<div id="sortscript2">
 <h2>অনলাইন সংবাদপত্রসমূহ / পোর্টাল</h2>
 <script>
    $('document').ready(function(){
-    $('#sortscript').jplist({
+    $('#sortscript2').jplist({
     
      items_box: '.sort-list' 
      ,item_path: '.totalcontainercss' 
@@ -316,11 +316,11 @@ No results found</div>
 <hr/>
 <br/><br/>
 <!--section two-->
-<div id="sortscript2">
+<div id="sortscript3">
 <h2>বিদেশী বাংলা সংবাদপত্রসমূহ</h2>
 <script>
    $('document').ready(function(){
-    $('#sortscript2').jplist({
+    $('#sortscript3').jplist({
     
      items_box: '.sort-list' 
      ,item_path: '.totalcontainercss' 
@@ -515,6 +515,20 @@ No results found</div>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script type="text/javascript" src="javascripts/jquery.nav.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="javascripts/smoothScroll.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.sticky.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('nav ul').onePageNav({
+	  scrollOffset: 40
+	});
+
+ $("nav").sticky({ topSpacing: 40, className:"issticky" });
+});
+</script> 
+ 
   </body>
 </html>

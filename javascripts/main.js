@@ -13,24 +13,46 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(document).ready(function(){
-  $("section h1, section h2").each(function(){
+/*  $("section h1, section h2").each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
-    $("nav ul li:first-child a").parent().addClass("active");
-  });
-  
-  $("nav ul li").on("click", "a", function(event) {
-    var position = $($(this).attr("href")).offset().top - 30;
-    $("html, body").animate({scrollTop: position}, 400);
-    $("nav ul li a").parent().removeClass("active");
-    $(this).parent().addClass("active");
-    event.preventDefault();    
-  });
-  
+    $("nav ul li:first-child a").parent().addClass("current");
+  });*/
+    
   sectionHeight();
   
   $('img').load(sectionHeight);
+  
+  //sticky nav(menu)
+  
+/*          $(function() {
+            var offset = $("nav").offset();
+            var topPadding = -40;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("nav").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top - topPadding
+                    }, 300);
+                } else {
+                    $("nav").stop().animate({
+                        marginTop: 0
+                    }, 0);
+                };
+            });
+        });*/
+		
+/*  var top = $('nav').offset().top;
+  $(window).scroll(function (event) {
+    var y = $(this).scrollTop();
+    if (y >= top)
+      $('nav').addClass('fixed');
+    else
+      $('nav').removeClass('fixed');
+  });*/
+
 });
+//sticky nav(menu) END
+
 
 fixScale = function(doc) {
 
