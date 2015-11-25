@@ -3,7 +3,7 @@
 background:none repeat scroll 0 0 #F7F7F7;
 border:2px solid #8F8F8F;
 float:left;
-margin:5px 5px 20px;
+margin:5px 5px 18px;
 padding:3px;
 position:relative;
 text-align:center;
@@ -50,7 +50,7 @@ width:172px;
 
 .totalcontainercss a {
     color: #222222;
-    font: 400 14px/16px verdana,arial,serif;
+    font: 400 14px/24px verdana,arial,serif;
     text-align: center;
     text-decoration: none;
 }
