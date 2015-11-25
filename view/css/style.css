@@ -24,6 +24,23 @@ width: 100%;
 bottom: 0;
 top: 95px;
 }
+/*div1, ads closing button x */
+#close-div1 {
+    background: url("../close.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    z-index: 1000;
+    width: 18px;
+    height: 18px;
+    border: 1px solid transparent;
+}
+#close-div1:hover {
+    border: 1px solid #aaa;
+}
+
 #newslink-list h2 {
     font-size: 16px;
     padding-left: 6px;

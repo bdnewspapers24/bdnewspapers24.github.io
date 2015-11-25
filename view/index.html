@@ -51,6 +51,7 @@ function updateiframe() {
 <div id="div1">
 <iframe src="top-ads/top-ads-iframe.html" id="bniframe1" width="100%" margin="0" height="90px" align="top" scrolling="No" frameborder="0"></iframe>
 </div>
+<div id="close-div1"></div>
 <div id="div2">
 <iframe src="" id="news_iFrame_ID" width="100%" margin="0" height="100%" align="top" scrolling="Auto" frameborder="0"></iframe>
 </div>
@@ -58,9 +59,12 @@ function updateiframe() {
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jQuery_v1.9.1.js">\x3C/script>')</script>
-    <link rel="stylesheet" href="css/newspaperList.css">
+<script>
+window.jQuery || document.write('<script src="js/jQuery_v1.9.1.js">\x3C/script>')
+</script>
+<link rel="stylesheet" href="css/newspaperList.css">
 <script type="text/javascript" src="js/sort_newspaperList.js"></script>
+
 
 
 <div class="floating-gadget">
@@ -525,7 +529,9 @@ No results found</div>
 
 <script type="text/javascript" src="js/script.js"></script>
 
-<script>
+<script type="text/javascript">
+
+// show/hide floating news-site-link list
 jQuery('.floating-gadget .fg-switch').click(function() {
     if (jQuery('.floating-gadget').hasClass("active")) { //hide
         jQuery('.floating-gadget').animate(
@@ -533,9 +539,7 @@ jQuery('.floating-gadget .fg-switch').click(function() {
 			function() {
 				jQuery('.floating-gadget').toggleClass("active");
 			});
-    } 
-	
-	else { //show
+    } else { //show
         jQuery('.floating-gadget').animate(
 			{ left: "0px" }, 200,
 			function() {
@@ -543,8 +547,16 @@ jQuery('.floating-gadget .fg-switch').click(function() {
 		);
     }
 });
+
+// when almost everything is ready then..
 $(document).ready(function () {    
-    $('.floating-gadget').css('display','block');
+    $('.floating-gadget').css('display','block'); // show floating widget
+	$('#close-div1').show(); // show the cross icon to close div1
+	$('#close-div1').on('click', function () {								
+				$('#div1').hide(); 
+				$('#div2').css('top','0'); // adjust css of div2 while div1 is hidden
+				$('#close-div1').hide(); // kill the cross icon too :p
+			});
 });
 </script>
 </body>
