@@ -36,9 +36,11 @@ top: 95px;
     width: 18px;
     height: 18px;
     border: 1px solid transparent;
+	opacity: 0.5;
 }
 #close-div1:hover {
     border: 1px solid #aaa;
+	opacity: 0.7;
 }
 
 #newslink-list h2 {
