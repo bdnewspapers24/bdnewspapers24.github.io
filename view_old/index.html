@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<title>Read Bangla Newspaper</title>
+<style type="text/css">
+* {
+margin: 0;
+padding: 0;
+}
+.container100 {
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+#div1 {
+position: fixed;
+width: 100%;
+height: 95px;
+overflow: hidden;
+top: 0;
+background: #f6f6f6;
+left: 0;
+}
+
+#div2 {
+position: absolute;
+width: 100%;
+bottom: 0;
+top: 95px;
+}
+</style>
+
+<script language="javascript">
+<!--
+
+window.onload = updateiframe; //event handler (calls the function)
+function updateiframe() {
+  function getUrlVars() {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++) {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+  return vars;
+  }
+  var hash = getUrlVars();
+  var siteUrl = decodeURIComponent(hash['url']);
+  var siteTitle = decodeURIComponent(hash['title']);
+  
+  	//if address bar URL have a '?url=' URL...
+	//then inject that url into iframe src.
+	if (siteUrl.length > 10 )
+	{		
+		document.getElementById('news_iFrame_ID').src = siteUrl;
+		document.title = siteTitle + ' - Bangla Newspaper';
+	}
+	
+	//when address bar URL doesn't have a '?url='
+	//then use a default iframe src URL.
+	else {
+		document.getElementById('news_iFrame_ID').src = "http://bn.bdnewspapers24.com/view/nothing-is-here.html";
+	}
+	
+}
+
+-->
+</script>
+</head>
+
+<body class="container100">
+
+<div id="div1">
+<iframe src="top-ads/top-ads-iframe.html" id="bniframe1" width="100%" margin="0" height="90px" align="top" scrolling="No" frameborder="0"></iframe>
+</div>
+<div id="div2">
+<iframe src="" id="news_iFrame_ID" width="100%" margin="0" height="100%" align="top" scrolling="Auto" frameborder="0"></iframe>
+</div>
+
+</body>
+</html>

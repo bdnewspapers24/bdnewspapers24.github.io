@@ -3,35 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>Read Bangla Newspaper</title>
-<style type="text/css">
-* {
-margin: 0;
-padding: 0;
-}
-.container100 {
-width: 100%;
-height: 100%;
-overflow: hidden;
-}
-#div1 {
-position: fixed;
-width: 100%;
-height: 95px;
-overflow: hidden;
-top: 0;
-background: #f6f6f6;
-left: 0;
-}
-
-#div2 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 95px;
-}
-</style>
-
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
 <script language="javascript">
 <!--
 
@@ -80,5 +55,497 @@ function updateiframe() {
 <iframe src="" id="news_iFrame_ID" width="100%" margin="0" height="100%" align="top" scrolling="Auto" frameborder="0"></iframe>
 </div>
 
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jQuery_v1.9.1.js">\x3C/script>')</script>
+    <link rel="stylesheet" href="css/newspaperList.css">
+<script type="text/javascript" src="js/sort_newspaperList.js"></script>
+
+
+<div class="floating-gadget">
+    <div class="fg-switch"></div>
+    <div class="floating-gadget-content">
+    	<div id="newslink-list">
+		<ul class="nav nav-tabs">
+                <li class="active"><a href="#tabs1-pane1" data-toggle="tab">Tab 1</a></li>
+                <li><a href="#tabs1-pane2" data-toggle="tab">Tab 2</a></li>
+                <li><a href="#tabs1-pane3" data-toggle="tab">Tab 3</a></li>
+                <li><a href="#tabs1-pane4" data-toggle="tab">Tab 4</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs1-pane1">
+               		<!--section_1-->
+<div id="sortscript1">
+<h2>জাতীয় বাংলা সংবাদপত্রসমূহ</h2>
+<script>
+   $('document').ready(function(){
+    $('#sortscript1').jplist({
+    
+     items_box: '.sort-list' 
+     ,item_path: '.totalcontainercss' 
+     ,panel_path: '.panel'
+     
+    });
+   });
+  </script>
+
+<div class="panel">
+<div class="drop-down" data-control-action="sort" data-control-name="sort" data-control-type="drop-down" data-datetime-format="{month}/{day}/{year}">
+<div class="panel">
+Sort by</div>
+<ul style="display: none;">
+<li class="active">
+        <span data-path="default">Sort by</span>
+        </li>
+<li class="">
+        <span data-order="asc" data-path=".siteName" data-type="text">Name [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".siteName" data-type="text">Name [↑]</span>
+        </li>
+<li class="">
+        <span data-default="true" data-order="asc" data-path=".rank" data-type="number">Popularity [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".rank" data-type="number">Popularity [↑]</span>
+        </li>
+</ul>
+</div>
+<div class="filter">
+<input data-control-action="filter" data-control-name="title-filter" data-control-type="textbox" data-path=".siteName" placeholder="Search Newspaper" type="text" />
+</div>
+</div>
+<br />
+<br />
+<br />
+<div id="sortlist-section_1" class="sort-list">
+
+<div class="totalcontainercss">
+<a title="Kaler Kantho" target="_blank" rel="nofollow" href="/view/?url=http://www.dailykalerkantho.com/&amp;title=Kaler Kantho" class="siteName"><img alt="Kaler Kantho" src="https://lh3.googleusercontent.com/-KRCNyEUD_lQ/UI_H72ptQVI/AAAAAAAABM0/8E0ve6d5L_Y/s1600/Daily_Kaler_Kantho-banglanewspaper24net.jpg"/>Kaler Kantho</a>
+<span class="rank">2</span>
+</div>
+<div class="totalcontainercss">
+<a title="Prothom Alo" target="_blank" rel="nofollow" href="/view/?url=http://www.prothom-alo.com/&amp;title=Prothom Alo" class="siteName"><img alt="Prothom Alo" src="https://lh3.googleusercontent.com/-e_P2WNZjuIc/UI_H-qdyGNI/AAAAAAAABNE/y2qim4DaSM0/s1600/Daily_Prothom_Alo-banglanewspaper24net.jpg"/>Prothom Alo</a>
+<span class="rank">1</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bangladesh Protidin" target="_blank" rel="nofollow" href="/view/?url=http://www.bd-pratidin.com/&amp;title=Bangladesh Protidin" class="siteName"><img alt="Bangladesh Protidin" src="https://lh3.googleusercontent.com/-9GCHurbFXEI/UI_HdOVKzuI/AAAAAAAABKM/zwhckEb5UkE/s1600/BD_Protidin-banglanewspaper24net.jpg"/>Bangladesh Protidin</a>
+<span class="rank">7</span>
+</div>
+<div class="totalcontainercss">
+<a title="Samakal" target="_blank" rel="nofollow" href="/view/?url=http://www.samakal.com.bd/&amp;title=Samakal" class="siteName"><img alt="Samakal" src="https://lh3.googleusercontent.com/-Fk8qliY4zmE/UI_Iml5mWoI/AAAAAAAABQM/Q9q1-dzmP7U/s1600/Shamokal-banglanewspaper24net.jpg"/>Samakal</a>
+<span class="rank">8</span>
+</div>
+<div class="totalcontainercss">
+<a title="Jugantor" target="_blank" rel="nofollow" href="/view/?url=http://jugantor.us/&amp;title=Jugantor" class="siteName"><img alt="Jugantor" src="https://lh3.googleusercontent.com/-ZVORDA8-a4U/UI_H6esUo4I/AAAAAAAABMs/gWGLlud-9PA/s1600/Daily_Jugantor-banglanewspaper24net.jpg"/>Jugantor</a>
+<span class="rank">4</span>
+</div>
+<div class="totalcontainercss">
+<a title="Sangram" target="_blank" rel="nofollow" href="/view/?url=http://www.dailysangram.com/&amp;title=Sangram" class="siteName"><img alt="Sangram" src="https://lh3.googleusercontent.com/-tnrd9byv_iE/UI_ICOpBteI/AAAAAAAABNU/qxORyhAfe5Y/s1600/Daily_Sangram-banglanewspaper24net.jpg"/>Sangram</a>
+<span class="rank">10</span>
+</div>
+<div class="totalcontainercss">
+<a title="Share Biz" target="_blank" rel="nofollow" href="/view/?url=http://www.dailysharebiz.com/&amp;title=Share Biz" class="siteName"><img alt="Share Biz" src="https://lh3.googleusercontent.com/-0qLMU5UuFV8/UI_HwWeHE8I/AAAAAAAABL0/21saWBoluBo/s1600/Daily-Share-Biz-banglanewspaper24net.jpg"/>Share Biz</a>
+<span class="rank">13</span>
+</div>
+<div class="totalcontainercss">
+<a title="Amar Desh" target="_blank" rel="nofollow" href="/view/?url=http://www.amardeshonline.com/&amp;title=Amar Desh" class="siteName"><img alt="Amar Desh" src="https://lh3.googleusercontent.com/-JmKEupt6M9Q/UI_HW0YUVcI/AAAAAAAABJs/jRXW9SCivWQ/s1600/Amar_Desh-banglanewspaper24net.jpg"/>Amar Desh</a>
+<span class="rank">12</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bhorer kagoj" target="_blank" rel="nofollow" href="/view/?url=http://www.bhorerkagoj.net/&amp;title=Bhorer kagoj" class="siteName"><img alt="Bhorer kagoj" src="https://lh3.googleusercontent.com/-dzFE8j1bS20/UI_Hlzlv1RI/AAAAAAAABK8/zCGyND_pyK0/s1600/Bhorer-Kagoj-banglanewspaper24net.jpg"/>Bhorer kagoj</a>
+<span class="rank">14</span>
+</div>
+<div class="totalcontainercss">
+<a title="Inqilab" target="_blank" rel="nofollow" href="/view/?url=http://www.dailyinqilab.com/&amp;title=Inqilab" class="siteName"><img alt="Inqilab" src="https://lh3.googleusercontent.com/-xaTUH-d5JFU/UI_H2THAd9I/AAAAAAAABMU/Z80vwhAxYvs/s1600/Daily_Inqilab-banglanewspaper24net.jpg"/>Inqilab</a>
+<span class="rank">6</span>
+</div>
+<div class="totalcontainercss">
+<a title="Janakantha" target="_blank" rel="nofollow" href="/view/?url=http://www.dailyjanakantha.com/&amp;title=Janakantha" class="siteName"><img alt="Janakantha" src="https://lh5.googleusercontent.com/-9UGlJlAXd24/UlFysgdZNFI/AAAAAAAACFA/ans4sHUV0HY/s1600/Janakantha-banglanewspaper24net.png"/>Janakantha</a>
+<span class="rank">9</span>
+</div>
+<div class="totalcontainercss">
+<a title="Manob Jamin" target="_blank" rel="nofollow" href="/view/?url=http://www.mzamin.com/&amp;title=Manob Jamin" class="siteName"><img alt="Manob Jamin" src="https://lh3.googleusercontent.com/-wQ2cCU4viLk/UI_HuwI47ZI/AAAAAAAABLs/W5BTjC7MJdo/s1600/Daily-Manob-Jamin-banglanewspaper24net.jpg"/>Manob Jamin</a>
+<span class="rank">5</span>
+</div>
+<div class="totalcontainercss">
+<a title="Shokaler Khabor" target="_blank" rel="nofollow" href="/view/?url=http://www.shokalerkhabor.com/&amp;title=Shokaler Khabor" class="siteName"><img alt="Shokaler Khabor" src="https://lh3.googleusercontent.com/-e6gaKSXFTXA/UI_IoS9k93I/AAAAAAAABQU/1vvuKyOwEWI/s1600/Shokaler_Khabor-banglanewspaper24net.jpg"/>Shokaler Khabor</a>
+<span class="rank">15</span>
+</div>
+<div class="totalcontainercss">
+<a title="Amader Shmoy" target="_blank" rel="nofollow" href="/view/?url=http://www.amadershomoy.com/&amp;title=Amader Shmoy" class="siteName"><img alt="Amader Shmoy" src="https://lh3.googleusercontent.com/-CuQwhT02sxg/UI_HVcSyLpI/AAAAAAAABJk/c64WEyzo6VI/s1600/Amader_Shomoy-banglanewspaper24net.jpg"/>Amader Shmoy</a>
+<span class="rank">17</span>
+</div>
+<div class="totalcontainercss">
+<a title="Suprobhat Bangladesh" target="_blank" rel="nofollow" href="/view/?url=http://www.suprobhatbangladesh.com/&amp;title=Suprobhat Bangladesh" class="siteName"><img alt="Suprobhat Bangladesh" src="https://lh3.googleusercontent.com/-LR3KehkzKM4/UI_IppB9snI/AAAAAAAABQc/dy3GzgrHYLI/s1600/Suprovat-Bangladesh-banglanewspaper24net.jpg"/>Suprobhat Bangladesh</a>
+<span class="rank">18</span>
+</div>
+<div class="totalcontainercss">
+<a title="Aporadh Kantha" target="_blank" rel="nofollow" href="/view/?url=http://www.aparadhkantha.com.bd/&amp;title=Aporadh Kantha" class="siteName"><img alt="Aporadh Kantha" src="https://lh3.googleusercontent.com/-XhW8YL3oqEo/UI_IuUI4bwI/AAAAAAAABQ0/FQY2MLA7qss/s1600/The_Daily_Aparadh_Kandha-banglanewspaper24net.jpg"/>Aporadh Kantha</a>
+<span class="rank">21</span>
+</div>
+<div class="totalcontainercss">
+<a title="Ittefaq" target="_blank" rel="nofollow" href="/view/?url=http://www.ittefaq.com.bd/&amp;title=Ittefaq" class="siteName"><img alt="Ittefaq" src="https://lh5.googleusercontent.com/-7xt5g5lAU9c/UlFysyPkKvI/AAAAAAAACFE/lNQv91HffhM/s1600/Ittefaq-banglanewspaper24net.png"/>Ittefaq</a>
+<span class="rank">3</span>
+</div>
+<div class="totalcontainercss">
+<a title="Amader Orthoneeti" target="_blank" rel="nofollow" href="/view/?url=http://www.amaderorthoneeti.com/&amp;title=Amader Orthoneeti" class="siteName"><img alt="Amader Orthoneeti" src="https://lh4.googleusercontent.com/-eCgy9R5Reh8/UlFyqgJIcII/AAAAAAAACEw/OYDUzJIydYA/s1600/Amader-Orthoneeti-banglanewspaper24net.png"/>Amader Orthoneeti</a>
+<span class="rank">23</span>
+</div>
+<div class="totalcontainercss">
+<a title="Janata" target="_blank" rel="nofollow" href="/view/?url=http://www.djanata.com/&amp;title=Janata" class="siteName"><img alt="Janata" src="https://lh4.googleusercontent.com/-7zgTG8hyxkA/UlGJ4VvNJjI/AAAAAAAACGI/YWXxkYZCe6k/s1600/Janata-banglanewspaper24net.png"/>Janata</a>
+<span class="rank">22</span>
+</div>
+<div class="totalcontainercss">
+<a title="Jay Jay Din" target="_blank" rel="nofollow" href="/view/?url=http://www.jjdin.com/&amp;title=Jay Jay Din" class="siteName"><img alt="Jay Jay Din" src="https://lh4.googleusercontent.com/-0wy7TpdURzI/UlFytUyhDvI/AAAAAAAACFQ/FMFlrnZA_bs/s1600/Jay-Jay-Din-banglanewspaper24net.png"/>Jay Jay Din</a>
+<span class="rank">19</span>
+</div>
+<div class="totalcontainercss">
+<a title="Manob Kontho" target="_blank" rel="nofollow" href="/view/?url=http://manobkantha.com/&amp;title=Manob Kontho" class="siteName"><img alt="Manob Kontho" src="https://lh5.googleusercontent.com/-s8WpghA2hUM/UlFyuQciCsI/AAAAAAAACFY/QnmS95ylqOI/s1600/Manob-Kontho-banglanewspaper24net.png"/>Manob Kontho</a>
+<span class="rank">16</span>
+</div>
+<div class="totalcontainercss">
+<a title="Sangbad" target="_blank" rel="nofollow" href="/view/?url=http://www.sangbad.com.bd/&amp;title=Sangbad" class="siteName"><img alt="Sangbad" src="https://lh3.googleusercontent.com/-QK8oehGFPFs/UlFywMAFbVI/AAAAAAAACFw/MXeQriq5a1c/s1600/Sangbad-Protidin-banglanewspaper24net.png"/>Sangbad</a>
+<span class="rank">20</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bonik Barta" target="_blank" rel="nofollow" href="/view/?url=http://www.bonikbarta.com/&amp;title=Bonik Barta" class="siteName"><img alt="Bonik Barta" src="https://lh4.googleusercontent.com/-WgH84lVIOQ8/UlFyqlDxpOI/AAAAAAAACE0/WDCtAfscuqs/s1600/Bonik-Barta-banglanewspaper24net.png"/>Bonik Barta</a>
+<span class="rank">11</span>
+</div>
+
+</div> <!--sortlist-section_1 END-->
+<div class="jplist-no-results" style="display: none;">
+No results found</div>
+</div>
+<!--section_1_END-->
+                </div>
+                <div class="tab-pane" id="tabs1-pane2">
+                  <!--Portal section_START-->
+<div id="sortscript2">
+<h2>অনলাইন সংবাদপত্রসমূহ / পোর্টাল</h2>
+<script>
+   $('document').ready(function(){
+    $('#sortscript2').jplist({
+    
+     items_box: '.sort-list' 
+     ,item_path: '.totalcontainercss' 
+     ,panel_path: '.panel'
+     
+    });
+   });
+  </script>
+
+<div class="panel">
+<div class="drop-down" data-control-action="sort" data-control-name="sort" data-control-type="drop-down" data-datetime-format="{month}/{day}/{year}">
+<div class="panel">
+Sort by</div>
+<ul style="display: none;">
+<li class="active">
+        <span data-path="default">Sort by</span>
+        </li>
+<li class="">
+        <span data-order="asc" data-path=".siteName" data-type="text">Name [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".siteName" data-type="text">Name [↑]</span>
+        </li>
+<li class="">
+        <span data-default="true" data-order="asc" data-path=".rank" data-type="number">Popularity [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".rank" data-type="number">Popularity [↑]</span>
+        </li>
+</ul>
+</div>
+<div class="filter">
+<input data-control-action="filter" data-control-name="title-filter" data-control-type="textbox" data-path=".siteName" placeholder="Search Newspaper" type="text" />
+</div>
+</div>
+<br />
+<br />
+<br />
+<div id="sortlist-section_2" class="sort-list">
+
+<div class="totalcontainercss">
+<a title="NotunBarta" target="_blank" rel="nofollow" href="/view/?url=http://www.natunbarta.com/&amp;title=NotunBarta" class="siteName"><img alt="NotunBarta" src="https://lh6.googleusercontent.com/-o2XHcz1cPm8/UlP8LHnSSsI/AAAAAAAACKE/3GONQBM2QpY/s1600/NotunBarta-banglanewspaper24net.png">NotunBarta</a>
+<span class="rank">6</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bangla Mail 24" target="_blank" rel="nofollow" href="/view/?url=http://www.banglamail24.com/&amp;title=Bangla Mail 24" class="siteName"><img alt="Bangla Mail 24" src="https://lh5.googleusercontent.com/-vHTSZD1R74I/Uk7BduAEnuI/AAAAAAAACDE/U1snLEWHxwo/s1600/Bangla-Mail-24-banglanewspaper24net.jpg">Bangla Mail 24</a>
+<span class="rank">8</span>
+</div>
+<div class="totalcontainercss">
+<a title="bd 24 live" target="_blank" rel="nofollow" href="/view/?url=http://bd24live.com/&amp;title=bd 24 live" class="siteName"><img alt="bd 24 live" src="https://lh6.googleusercontent.com/-ixN5L69jvNA/Uk7Bj8-EzNI/AAAAAAAACEI/ggC487hIv_o/s1600/bd-24-live-banglanewspaper24net.jpg">bd 24 live</a>
+<span class="rank">7</span>
+</div>
+<div class="totalcontainercss">
+<a title="BD National News" target="_blank" rel="nofollow" href="/view/?url=http://www.bdnationalnews.com/&amp;title=BD National News" class="siteName"><img alt="BD National News" src="https://lh5.googleusercontent.com/-tqa1WFdKuRA/Uk7BdbJ9i-I/AAAAAAAACDA/-wxoVw7nFxw/s1600/BD-National-News-banglanewspaper24net.jpg">BD National News</a>
+<span class="rank">14</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bengali News 24" target="_blank" rel="nofollow" href="/view/?url=http://www.bengalinews24.com/&amp;title=Bengali News 24" class="siteName"><img alt="Bengali News 24" src="https://lh5.googleusercontent.com/-JG6c-nYLhno/Uk7BdtOcAFI/AAAAAAAACDM/crPHqO4yj0w/s1600/Bengali-News-24-banglanewspaper24net.jpg">Bengali News 24</a>
+<span class="rank">13</span>
+</div>
+<div class="totalcontainercss">
+<a title="Dhaka Times 24" target="_blank" rel="nofollow" href="/view/?url=http://www.dhakatimes24.com/&amp;title=Dhaka Times 24" class="siteName"><img alt="Dhaka Times 24" src="https://lh3.googleusercontent.com/-OxKsunTJX3Y/Uk7BfoECfJI/AAAAAAAACDY/Ucb9oPBruZM/s1600/Dhaka-Times-24-banglanewspaper24net.jpg">Dhaka Times 24</a>
+<span class="rank">5</span>
+</div>
+<div class="totalcontainercss">
+<a title="News Event 24" target="_blank" rel="nofollow" href="/view/?url=http://dailybnbnews.com/bnbnews/&amp;title=News Event 24" class="siteName"><img alt="News Event 24" src="https://lh3.googleusercontent.com/-awulMBRTBlA/Uk7BhAGYDkI/AAAAAAAACDo/Can8-neEbNo/s1600/News-Event-24-banglanewspaper24net.jpg">News Event 24</a>
+<span class="rank">10</span>
+</div>
+<div class="totalcontainercss">
+<a title="Poriborton" target="_blank" rel="nofollow" href="/view/?url=http://www.poriborton.com/&amp;title=Poriborton" class="siteName"><img alt="Poriborton" src="https://lh3.googleusercontent.com/-iYF_N6oD-Ts/Uk7BgMmUL6I/AAAAAAAACDg/fCUUzlH76BQ/s1600/Poriborton-banglanewspaper24net.jpg">Poriborton</a>
+<span class="rank">4</span>
+</div>
+<div class="totalcontainercss">
+<a title="Priyo Bangla News" target="_blank" rel="nofollow" href="/view/?url=http://www.priyo.com/&amp;title=Priyo Bangla News" class="siteName"><img alt="Priyo Bangla News" src="https://lh3.googleusercontent.com/-HxA0iCu9sno/Uk7BhSgDphI/AAAAAAAACDw/WVeRUYqlR2Y/s1600/Priyo-Bangla-News-banglanewspaper24net.jpg">Priyo Bangla News</a>
+<span class="rank">3</span>
+</div>
+<div class="totalcontainercss">
+<a title="Rising bd" target="_blank" rel="nofollow" href="/view/?url=http://risingbd.com/&amp;title=Rising bd" class="siteName"><img alt="Rising bd" src="https://lh5.googleusercontent.com/-nDOpoIecAW0/Uk7Bh_sD8TI/AAAAAAAACD4/j48fu_18xws/s1600/Rising-bd-banglanewspaper24net.jpg">Rising bd</a>
+<span class="rank">12</span>
+</div>
+<div class="totalcontainercss">
+<a title="Sheersha News" target="_blank" rel="nofollow" href="/view/?url=http://www.sheershanews.com/&amp;title=Sheersha News" class="siteName"><img alt="Sheersha News" src="https://lh5.googleusercontent.com/-03GDENZ14XQ/Uk7BixiTfJI/AAAAAAAACEA/OgJEO0Nf_e4/s1600/Sheersha-News-banglanewspaper24net.jpg">Sheersha News</a>
+<span class="rank">11</span>
+</div>
+<div class="totalcontainercss">
+<a title="bd news 24" target="_blank" rel="nofollow" href="/view/?url=http://www.bdnews24.com/bangla/&amp;title=bd news 24" class="siteName"><img alt="bd news 24" src="https://lh5.googleusercontent.com/-O_MhpD3Uy_g/Uk7e0K6qHbI/AAAAAAAACEc/dPs0BqrkjZg/s1600/bd-news-24-banglanewspaper24net.png">bd news 24</a>
+<span class="rank">1</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bangla News 24" target="_blank" rel="nofollow" href="/view/?url=http://www.banglanews24.com/&amp;title=Bangla News 24" class="siteName"><img alt="Bangla News 24" src="https://lh3.googleusercontent.com/-Rj2_hpdXFuo/UI_Hey0x1TI/AAAAAAAABKU/IOHukAdpCiw/s1600/Bangla_News_24-banglanewspaper24net.jpg">Bangla News 24</a>
+<span class="rank">2</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bangla Times 24" target="_blank" rel="nofollow" href="/view/?url=http://banglatimes24.com/&amp;title=Bangla Times 24" class="siteName"><img alt="Bangla Times 24" src="https://lh3.googleusercontent.com/-O3KYaLzYhF0/UI_HgRScO6I/AAAAAAAABKc/fFr_V1pnP9M/s1600/Bangla_Times_24-banglanewspaper24net.jpg">Bangla Times 24</a>
+<span class="rank">9</span>
+</div>
+</div><!--END-->
+<div class="jplist-no-results" style="display: none;">
+No results found</div>
+</div>
+<!--Portal section_END-->
+                </div>
+                <div class="tab-pane" id="tabs1-pane3">
+                   <!--section two-->
+<div id="sortscript3">
+<h2>বিদেশী বাংলা সংবাদপত্রসমূহ</h2>
+<script>
+   $('document').ready(function(){
+    $('#sortscript3').jplist({
+    
+     items_box: '.sort-list' 
+     ,item_path: '.totalcontainercss' 
+     ,panel_path: '.panel'
+     
+    });
+   });
+  </script>
+
+<div class="panel">
+<div class="drop-down" data-control-action="sort" data-control-name="sort" data-control-type="drop-down" data-datetime-format="{month}/{day}/{year}">
+<div class="panel">
+Sort by</div>
+<ul style="display: none;">
+<li class="active">
+        <span data-path="default">Sort by</span>
+        </li>
+<li class="">
+        <span data-order="asc" data-path=".siteName" data-type="text">Name [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".siteName" data-type="text">Name [↑]</span>
+        </li>
+<li class="">
+        <span data-default="true" data-order="asc" data-path=".rank" data-type="number">Popularity [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".rank" data-type="number">Popularity [↑]</span>
+        </li>
+</ul>
+</div>
+<div class="filter">
+<input data-control-action="filter" data-control-name="title-filter" data-control-type="textbox" data-path=".siteName" placeholder="Search Newspaper" type="text" />
+</div>
+</div>
+<br />
+<br />
+<br />
+<div id="sortlist-section_3" class="sort-list">
+
+<div class="totalcontainercss">
+<a title="VOA News" target="_blank" rel="nofollow" href="/view/?url=http://www.voanews.com/bangla/news/&amp;title=VOA News" class="siteName"><img alt="VOA News" src="https://lh3.googleusercontent.com/-AyxuCPDj_JQ/UI_JE26WVaI/AAAAAAAABSc/C1lPVumnQfo/s1600/VOA_News-banglanewspaper24net.jpg">VOA News</a>
+<span class="rank">2</span>
+</div>
+<div class="totalcontainercss">
+<a title="BBC Bangla" target="_blank" rel="nofollow" href="/view/?url=http://www.bbc.co.uk/bengali/&amp;title=BBC Bangla" class="siteName"><img alt="BBC Bangla" src="https://lh3.googleusercontent.com/-Xg5NzOMAA2g/UI_HbTO0qII/AAAAAAAABKE/ZbV27sR4eKU/s1600/BBC_Bangla-banglanewspaper24net.jpg">BBC Bangla</a>
+<span class="rank">1</span>
+</div>
+<div class="totalcontainercss">
+<a title="Tehran Bangla Radio" target="_blank" rel="nofollow" href="/view/?url=http://bangla.irib.ir/&amp;title=Tehran Bangla Radio" class="siteName"><img alt="Tehran Bangla Radio" src="https://lh3.googleusercontent.com/-s6Xm_DlUgJo/UI_IrUjVf2I/AAAAAAAABQk/EFLF47_w2ds/s1600/Tehran_Bangla_Radio-banglanewspaper24net.jpg">Tehran Bangla Radio</a>
+<span class="rank">3</span>
+</div>
+<div class="totalcontainercss">
+<a title="NHK_World_Bangla" target="_blank" rel="nofollow" href="/view/?url=http://www3.nhk.or.jp/nhkworld/bengali/top/index&amp;title=NHK_World_Bangla" class="siteName"><img alt="NHK_World_Bangla" src="https://lh3.googleusercontent.com/-ztRZnku1jfQ/UI_If6SPWuI/AAAAAAAABPk/PFVC9-rOSeA/s1600/NHK_World_Bangla-banglanewspaper24net.jpg">NHK_World_Bangla</a>
+<span class="rank">4</span>
+</div>
+<div class="totalcontainercss">
+<a title="China Radio" target="_blank" rel="nofollow" href="/view/?url=http://bengali.cri.cn/&amp;title=China Radio" class="siteName"><img alt="China Radio" src="https://lh3.googleusercontent.com/-5pA1F1LnCVQ/UI_HqA2kjnI/AAAAAAAABLU/oQy1e9tl8zM/s1600/China_Radio-banglanewspaper24net.jpg">China Radio</a>
+<span class="rank">6</span>
+</div>
+<div class="totalcontainercss">
+<a title="German Bangla" target="_blank" rel="nofollow" href="/view/?url=http://www2.dw-world.de/bengali/&amp;title=German Bangla" class="siteName"><img alt="German Bangla" src="https://lh3.googleusercontent.com/-E89nhj-zlYg/UI_IVLLfRNI/AAAAAAAABOs/Znk9r_kWW10/s1600/German_bangla_Radio-banglanewspaper24net.jpg">German Bangla</a>
+<span class="rank">5</span>
+</div>
+<div class="totalcontainercss">
+<a title="Radio Russia" target="_blank" rel="nofollow" href="/view/?url=http://bengali.ruvr.ru/&amp;title=Radio Russia" class="siteName"><img alt="Radio Russia" src="https://lh3.googleusercontent.com/-Bs56sLJykx8/UI_Ij-ybyrI/AAAAAAAABP8/MBVEDiEMYXI/s1600/Radio_Rasiya-banglanewspaper24net.jpg">Radio Russia</a>
+<span class="rank">10</span>
+</div>
+<div class="totalcontainercss">
+<a title="Bangla Express" target="_blank" rel="nofollow" href="/view/?url=http://www.banglaexpress.com.bd/&amp;title=Bangla Express" class="siteName"><img alt="Bangla Express" src="https://lh3.googleusercontent.com/-PqAzouqiVB0/Uk195QkYhlI/AAAAAAAACCY/EZcykMdbjrk/s1600/Bangla_Express-banglanewspaper24net.jpg">Bangla Express</a>
+<span class="rank">8</span>
+</div>
+<div class="totalcontainercss">
+<a title="Banglalink" target="_blank" rel="nofollow" href="/view/?url=http://www.banglalink.com/&amp;title=Banglalink" class="siteName"><img alt="Banglalink" src="https://lh6.googleusercontent.com/-JLdzr97zH5o/Uk196It4c9I/AAAAAAAACCo/Yq3SZoQ6wmY/s1600/Banglalink-banglanewspaper24net.jpg">Banglalink</a>
+<span class="rank">7</span>
+</div>
+<div class="totalcontainercss">
+<a title="BNB News" target="_blank" rel="nofollow" href="/view/?url=http://dailybnbnews.com/bnbnews/&amp;title=BNB News" class="siteName"><img alt="BNB News" src="https://lh5.googleusercontent.com/-iepbhw_eTpU/Uk195nrllII/AAAAAAAACCc/Ba9wXIA9oTY/s1600/BNB-News-banglanewspaper24net.jpg">BNB News</a>
+<span class="rank">9</span>
+</div>
+<div class="totalcontainercss">
+<a title="Deshe Bideshe" target="_blank" rel="nofollow" href="/view/?url=http://www.deshebideshe.com/&amp;title=Deshe Bideshe" class="siteName"><img alt="Deshe Bideshe" src="https://lh3.googleusercontent.com/-3Ioev0ZNJBg/Uk198o6_m2I/AAAAAAAACCw/XwQOIhwUctU/s1600/Deshe_Bideshe-banglanewspaper24net.jpg">Deshe Bideshe</a>
+<span class="rank">11</span>
+</div>
+
+</div><!--END-->
+<div class="jplist-no-results" style="display: none;">
+No results found</div>
+</div>
+<!--Section two END-->
+                </div>
+                <div class="tab-pane" id="tabs1-pane4">
+                  <!--ePaper Section_START-->
+<div id="sortscript4">
+<h2>ই-সংবাদপত্রসমূহ (প্রিন্ট ভার্সন যেমন)</h2>
+<script>
+   $('document').ready(function(){
+    $('#sortscript4').jplist({
+    
+     items_box: '.sort-list' 
+     ,item_path: '.totalcontainercss' 
+     ,panel_path: '.panel'
+     
+    });
+   });
+  </script>
+
+<div class="panel">
+<div class="drop-down" data-control-action="sort" data-control-name="sort" data-control-type="drop-down" data-datetime-format="{month}/{day}/{year}">
+<div class="panel">
+Sort by</div>
+<ul style="display: none;">
+<li class="active">
+        <span data-path="default">Sort by</span>
+        </li>
+<li class="">
+        <span data-order="asc" data-path=".siteName" data-type="text">Name [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".siteName" data-type="text">Name [↑]</span>
+        </li>
+<li class="">
+        <span data-default="true" data-order="asc" data-path=".rank" data-type="number">Popularity [↓]</span>
+        </li>
+<li>
+        <span data-order="desc" data-path=".rank" data-type="number">Popularity [↑]</span>
+        </li>
+</ul>
+</div>
+<div class="filter">
+<input data-control-action="filter" data-control-name="title-filter" data-control-type="textbox" data-path=".siteName" placeholder="Search Newspaper" type="text" />
+</div>
+</div>
+<br />
+<br />
+<br />
+<div id="sortlist-section_4" class="sort-list">
+
+<div class="totalcontainercss">
+<a title="eProthomAlo" target="_blank" rel="nofollow" href="/view/?url=http://www.eprothomalo.com/&amp;title=eProthomAlo" class="siteName"><img alt="eProthomAlo" src="https://lh3.googleusercontent.com/-Tgai8evJNJk/UI_JLtEOENI/AAAAAAAABTE/1tz3hQHuc8A/s1600/eProthom_Alo-banglanewspaper24net.jpg">eProthomAlo</a>
+<span class="rank">1</span>
+</div>
+<div class="totalcontainercss">
+<a title="eKalerKantha" target="_blank" rel="nofollow" href="/view/?url=http://www.dailykalerkantho.com/epaper/&amp;title=eKalerKantha" class="siteName"><img alt="eKalerKantha" src="https://lh3.googleusercontent.com/-ooweUv3pwDA/UI_JKLItUkI/AAAAAAAABS8/GKxKqxsyuf8/s1600/eKaler_Kantha-banglanewspaper24net.jpg">eKalerKantha</a>
+<span class="rank">2</span>
+</div>
+<div class="totalcontainercss">
+<a title="e-Bangladesh Protidin" target="_blank" rel="nofollow" href="/view/?url=http://www.bd-pratidin.com/epaper_v1/&amp;title=e-Bangladesh Protidin" class="siteName"><img alt="e-Bangladesh Protidin" src="https://lh6.googleusercontent.com/-ZCL5pUJMMYM/UlQEOYKkfTI/AAAAAAAACLE/IVQzA54WEGg/h69/e-Bangladesh-Protidin-banglanewspaper24net.png">e-Bangladesh Protidin</a>
+<span class="rank">3</span>
+</div>
+<div class="totalcontainercss">
+<a title="e-Shokaler Khobor" target="_blank" rel="nofollow" href="/view/?url=http://www.eshokalerkhabor.com/&amp;title=e-Shokaler Khobor" class="siteName"><img alt="e-Shokaler Khobor" src="https://lh3.googleusercontent.com/-Fs4R9RCqmsQ/UlQEMECKDHI/AAAAAAAACKs/hjjE8MiDS7s/h70/Shokaler_Khabor-banglanewspaper24net.jpg">e-Shokaler Khobor</a>
+<span class="rank">8</span>
+</div>
+<div class="totalcontainercss">
+<a title="eManob Kantha" target="_blank" rel="nofollow" href="/view/?url=http://www.emanobkantha.com/&amp;title=eManob Kantha" class="siteName"><img alt="eManob Kantha" src="https://lh5.googleusercontent.com/-9H2Re-xB0LA/UlQEM_TFTtI/AAAAAAAACK0/vxykYL9kIok/h69/Manob-Kontho-banglanewspaper24net.png">eManob Kantha</a>
+<span class="rank">7</span>
+</div>
+<div class="totalcontainercss">
+<a title="eInqilab" target="_blank" rel="nofollow" href="/view/?url=http://www.einqilab.com/&amp;title=eInqilab" class="siteName"><img alt="eInqilab" src="https://lh3.googleusercontent.com/-YUmaewG2lyQ/UlQEKkXsy-I/AAAAAAAACKk/LC2iQqLFoPg/h70/Daily_Inqilab-banglanewspaper24net.jpg">eInqilab</a>
+<span class="rank">6</span>
+</div>
+<div class="totalcontainercss">
+<a title="eAmader Shomoy" target="_blank" rel="nofollow" href="/view/?url=http://www.eamadershomoy.com/&amp;title=eAmader Shomoy" class="siteName"><img alt="eAmader Shomoy" src="https://lh5.googleusercontent.com/-j4eQ4qUVRkY/UlQEKYeLqWI/AAAAAAAACKU/dOcLKiHLMlM/h70/Amader_Shomoy-banglanewspaper24net.jpg">eAmader Shomoy</a>
+<span class="rank">5</span>
+</div>
+<div class="totalcontainercss">
+<a title="Joy Bangla" target="_blank" rel="nofollow" href="/view/?url=http://www.dailyjoybangla.com/&amp;title=Joy Bangla" class="siteName"><img alt="Joy Bangla" src="https://lh4.googleusercontent.com/-rMH9s2OF9h4/UlQEKmUtG9I/AAAAAAAACKY/NCow_75QNNc/h69/Joy-Bangla-banglanewspaper24net.png">Joy Bangla</a>
+<span class="rank">9</span>
+</div>
+<div class="totalcontainercss">
+<a title="Dinkal" target="_blank" rel="nofollow" href="/view/?url=http://www.dailydinkal.net/&amp;title=Dinkal" class="siteName"><img alt="Dinkal" src="https://lh3.googleusercontent.com/-AtnqbeiSf18/UlQENIcu1uI/AAAAAAAACK4/-bV6YoaK0ng/h70/The_Daily_Dinkal-banglanewspaper24net.jpg">Dinkal</a>
+<span class="rank">4</span>
+</div>
+
+</div><!--END-->
+<div class="jplist-no-results" style="display: none;">
+No results found</div>
+</div>
+<!--ePaper Section_END-->
+                </div>
+            </div><!-- /.tab-content -->
+		</div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+jQuery('.floating-gadget .fg-switch').click(function() {
+    if (jQuery('.floating-gadget').hasClass("active")) { //hide
+        jQuery('.floating-gadget').animate(
+			{ left: "-230px" }, 200,
+			function() {
+				jQuery('.floating-gadget').toggleClass("active");
+			});
+    } 
+	
+	else { //show
+        jQuery('.floating-gadget').animate(
+			{ left: "0px" }, 200,
+			function() {
+            jQuery('.floating-gadget').toggleClass("active");}
+		);
+    }
+});
+$(document).ready(function () {    
+    $('.floating-gadget').css('display','block');
+});
+</script>
 </body>
 </html>
