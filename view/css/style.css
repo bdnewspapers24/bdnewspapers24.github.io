@@ -42,8 +42,8 @@ top: 95px;
     border: 1px solid #aaa;
 	opacity: 0.7;
 }
-
 #newslink-list h2 {
+    margin-top: 17px;
     font-size: 16px;
     padding-left: 6px;
     line-height: 24px;
@@ -72,12 +72,8 @@ top: 95px;
 .floating-gadget .floating-gadget-content {
     overflow: auto;
     background: none repeat scroll 0 0 #FFFFFF;
-    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
     float: right;
     width: 230px;
-    position: relative;
-    max-height: 594px;
-    min-height: 340px;
     border: 1px solid #00C2B0;
 }
 .floating-gadget .floating-gadget-content p {
@@ -178,27 +174,31 @@ top: 95px;
   float: left;
 }
 .nav-tabs > li > a, .nav-pills > li > a {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 11px;
+    padding-left: 11px;
     margin-right: 4px;
     line-height: 14px;
 }
-.nav-tabs {
+ul.nav-tabs {
     border-bottom: 1px solid #ddd;
     background: #eee;
-	margin: -5px -5px 15px -5px;
+    margin: 1px 0 0 -5px;
+    position: absolute;
+    width: 226px;
+    top: 0;
+    z-index: 99999;
 }
 .nav-tabs > li {
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-	color: #DF6605;
+    color: #DF6605;
     text-decoration: none;
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 13px;
     font-weight: 700;
-    margin-top: 3px;
-    padding-bottom: 8px;
+    margin-top: 5px;
+    padding-bottom: 10px;
     line-height: 18px;
     border: 1px solid transparent;
     -webkit-border-radius: 4px 4px 0 0;
@@ -325,8 +325,11 @@ top: 95px;
   clear: both;
 }
 .tab-content {
-  display: table;
-  width: 100%;
+    display: block;
+    width: 225px;
+    margin-top: 48px;
+    height: 540px;
+    overflow: auto;
 }
 .tabs-below .nav-tabs,
 .tabs-right .nav-tabs,
